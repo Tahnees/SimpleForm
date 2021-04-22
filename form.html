@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM</title>
+        <style>
+            .box{
+                margin-top: 1%;
+                height: 50%;
+                width: 91%;
+                border-style:double;
+            }
+        </style>
+    </head>
+    <body>
+        <form>
+        <table border="1" style="margin-left: auto; margin-right: auto; margin-top: 8%; font-size: 17px;
+        border: solid black;" >
+            <tr>
+                <td width="100px"><b> EMAIL</b> </td>
+                <td><input type="text" name="Email">  </td>
+            </tr>
+            <tr>
+                <td><b> NAME</b> </td>
+                <td><input type="text" name="Name"> </td>
+            </tr>
+            <tr>
+                <td><b>COUNTRY</b></td>
+                <td> <select name="Country">
+                    <option>Select Value</option>
+                    <option>Australia</option>
+                    <option>China</option>
+                    <option>Iran</option>
+                    <option>Pakistan</option>
+                    <option>Russia</option>
+                    <option>Saudi Arabia</option>
+                </select>       
+               <b> CITY </b>
+                    <select name="City">
+                    <option>Select option</option>    
+                    <option>Abbottabad</option>
+                    <option>Islamabad</option>
+                    <option>Karachi</option>
+                    <option>Lahore</option>
+                    <option>Quetta</option>
+                    <option>Swat</option>
+                    </select>
+                </td>      
+            </tr>
+            <tr>
+                <td><b>ANSWER</b></td>
+                <td><input type="radio" name="Answer" value="Red" onclick="">Red
+                <input type="radio" name="Answer" value="Gray">Gray
+                <input type="radio" name="Answer" value="Blue">Blue</td>
+            </tr>
+            <tr>
+                <td><b>PREFERENCE</b></td>
+                <td><input type="checkbox" value="S">Sports
+                <input type="checkbox" value="P">Politics
+                <input type="checkbox" value="B">Business</td>
+            </tr>
+            <tr>
+                <td><b>WEBSITES</b></td>
+                <td style="height: 45px;">
+                   <select multiple>
+                <option> Facebook </option>
+                <option> Google </option>
+                <option> Instagram </option>
+                <option> Microsoft Edge </option>
+                <option> Opera Mini </option>
+                <option> Whatsapp</option>
+                <option> Wikipedia </option>
+                <option> Yahoo </option>
+                </select><br>
+                <div class="box">
+                User Ctrl+Click for multi-section
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td><b>ADDRESS</b></td>
+                <td> <textarea cols="30" rows="3" wrap="hard" type=text maxlength=20 size="20"></textarea>
+             
+            </tr>
+            <tr> 
+                <td>   </td>
+                <td>Remaining Characters:20 </td>  
+            </tr>
+            <tr style="height: 24px;">
+                <td>    </td>
+                <td>     </td>
+            </tr>
+            <tr>  
+                <td>   </td>
+                <td>
+                    <input type=SUBMIT value="SAVE" onclick="show_alert2();"> 
+                    <script>
+                        function show_alert2(){
+                            alert("Form has been Saved!!\n\tSuccessfully");
+                        }
+                    </script>
+                
+                    <input type=RESET VALUE="RESET" onclick="show_alert1();">
+                    <script>
+                        function show_alert1(){
+                        alert("Form has been reset\n\tSuccessfully!");
+                        }
+                    </script> 
+                </td>
+            </tr>
+            <tr style="height: 24px;">   
+                <td>   </td>
+                <td> </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
